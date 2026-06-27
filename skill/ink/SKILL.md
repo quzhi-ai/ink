@@ -30,6 +30,14 @@ Ask the user on first run: **English** or **中文**. Remember the choice for su
 
 The first time a user runs `/ink`, deliver a **Spotify Wrapped-style narrative reveal**. Each step is a "wow moment."
 
+### Step 0 — Ask Name
+
+Before anything else, ask the user's name:
+
+> "Before we start — what name should appear on your card?"
+
+Save the name to `~/.ink/name`. This name will appear on every card (e.g., "曲直" on a prescription, "曲直先生" in a newspaper headline, "Player: 曲直" on an NBA stats card). The card is theirs — their name makes it personal.
+
 ### Step 1 — Scan & Discover
 
 Scan the user's machine for AI tools. Check known data paths (see [Data Scanning](#data-scanning) below). Report what you found:
@@ -69,6 +77,7 @@ Generate **3 different cards** in the chosen mode. Each card must:
 - Use a completely different visual concept (not just color variations)
 - Be sized at **1170 × 1560 px** (3:4 ratio, Retina 3x)
 - Include all key statistics
+- Include the **user's name** prominently (read from `~/.ink/name`) — woven naturally into the format (e.g., patient name on a prescription, headline subject in a newspaper, artist name on a vinyl record)
 - Include one **original philosophical quote** (adapted from a real quote, not a direct copy)
 - Include the text "Made with Ink" at the bottom in small type
 - All text in the user's chosen language
@@ -248,6 +257,7 @@ google-chrome --headless --screenshot=OUTPUT_PATH --window-size=390,520 --force-
 ## State
 
 Track minimal state in `~/.ink/`:
+- `~/.ink/name` — user's display name (shown on every card)
 - `~/.ink/lang` — user's language preference (`en` or `zh`)
 - `~/.ink/last_mode` — last selected style mode
 - `~/.ink/first_run_done` — whether to show narrative or quick mode
