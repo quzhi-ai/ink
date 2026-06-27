@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 390px; height: 520px; overflow: hidden; }
+</style>
+</head>
+<body>
+<div style="font-family: 'SF Mono', 'Menlo', 'PingFang SC', monospace; max-width: 440px; margin: 0 auto; background: #fafaf8; border: 1px solid #d4d0c8; border-radius: 2px;">
+  <h2 class="sr-only">银行对账单风格 AI 对话统计卡片</h2>
+
+  <!-- 银行头 -->
+  <div style="padding: 20px 24px 16px; border-bottom: 2px solid #1a3a5c;">
+    <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+      <div>
+        <div style="font-size: 18px; font-weight: 700; color: #1a3a5c; letter-spacing: 2px;">中国人机银行</div>
+        <div style="font-size: 9px; color: #888; margin-top: 2px; letter-spacing: 1px;">HUMAN-AI BANK OF CHINA</div>
+      </div>
+      <div style="text-align: right;">
+        <div style="font-size: 9px; color: #888;">对账单编号</div>
+        <div style="font-size: 11px; color: #333;">HAB-2026-W26</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 账户信息 -->
+  <div style="padding: 12px 24px; border-bottom: 1px solid #e8e4dc; display: flex; justify-content: space-between;">
+    <div>
+      <div style="font-size: 9px; color: #888;">账户名称</div>
+      <div style="font-size: 13px; color: #333; font-weight: 600;">曲直</div>
+    </div>
+    <div>
+      <div style="font-size: 9px; color: #888;">账号</div>
+      <div style="font-size: 13px; color: #333;">6226 **** **** 0713</div>
+    </div>
+    <div>
+      <div style="font-size: 9px; color: #888;">账期</div>
+      <div style="font-size: 13px; color: #333;">2026.06.20 - 06.26</div>
+    </div>
+  </div>
+
+  <!-- 明细表头 -->
+  <div style="padding: 8px 24px; background: #f0ece4; border-bottom: 1px solid #d4d0c8;">
+    <div style="display: grid; grid-template-columns: 80px 1fr 70px 80px; font-size: 9px; color: #666; letter-spacing: 1px;">
+      <div>日期</div>
+      <div>摘要</div>
+      <div style="text-align: right;">支出（轮）</div>
+      <div style="text-align: right;">余额（轮）</div>
+    </div>
+  </div>
+
+  <!-- 明细 -->
+  <div style="padding: 0 24px; font-size: 11px; color: #333;">
+    <div style="display: grid; grid-template-columns: 80px 1fr 70px 80px; padding: 6px 0; border-bottom: 1px dotted #e8e4dc; align-items: center;">
+      <div style="color: #888;">06-20</div>
+      <div>飞书/Codex/Claude 对话</div>
+      <div style="text-align: right; color: #c23a2b;">91</div>
+      <div style="text-align: right;">91</div>
+    </div>
+    <div style="display: grid; grid-template-columns: 80px 1fr 70px 80px; padding: 6px 0; border-bottom: 1px dotted #e8e4dc; align-items: center;">
+      <div style="color: #888;">06-21</div>
+      <div>飞书/Codex/Claude 对话</div>
+      <div style="text-align: right; color: #c23a2b;">109</div>
+      <div style="text-align: right;">200</div>
+    </div>
+    <div style="display: grid; grid-template-columns: 80px 1fr 70px 80px; padding: 6px 0; border-bottom: 1px dotted #e8e4dc; align-items: center;">
+      <div style="color: #888;">06-22</div>
+      <div>飞书/Codex/Claude 对话</div>
+      <div style="text-align: right; color: #c23a2b;">97</div>
+      <div style="text-align: right;">297</div>
+    </div>
+    <div style="display: grid; grid-template-columns: 80px 1fr 70px 80px; padding: 6px 0; border-bottom: 1px dotted #e8e4dc; align-items: center; background: rgba(194,58,43,0.03);">
+      <div style="color: #888;">06-23</div>
+      <div style="font-weight: 600;">飞书/Codex/Claude 对话 <span style="color: #c23a2b; font-size: 9px;">峰值</span></div>
+      <div style="text-align: right; color: #c23a2b; font-weight: 700;">166</div>
+      <div style="text-align: right;">463</div>
+    </div>
+    <div style="display: grid; grid-template-columns: 80px 1fr 70px 80px; padding: 6px 0; border-bottom: 1px dotted #e8e4dc; align-items: center;">
+      <div style="color: #888;">06-24</div>
+      <div>飞书/Codex/Claude 对话</div>
+      <div style="text-align: right; color: #c23a2b;">133</div>
+      <div style="text-align: right;">596</div>
+    </div>
+    <div style="display: grid; grid-template-columns: 80px 1fr 70px 80px; padding: 6px 0; border-bottom: 1px dotted #e8e4dc; align-items: center;">
+      <div style="color: #888;">06-25</div>
+      <div>飞书/Codex/Claude 对话</div>
+      <div style="text-align: right; color: #c23a2b;">78</div>
+      <div style="text-align: right;">674</div>
+    </div>
+    <div style="display: grid; grid-template-columns: 80px 1fr 70px 80px; padding: 6px 0; border-bottom: 1px solid #d4d0c8; align-items: center;">
+      <div style="color: #888;">06-26</div>
+      <div style="color: #aaa;">飞书/Codex/Claude 对话 <span style="font-size: 9px;">进行中</span></div>
+      <div style="text-align: right; color: #c23a2b;">39</div>
+      <div style="text-align: right;">713</div>
+    </div>
+  </div>
+
+  <!-- 分项合计 -->
+  <div style="padding: 12px 24px; border-bottom: 1px solid #d4d0c8;">
+    <div style="font-size: 9px; color: #888; margin-bottom: 6px; letter-spacing: 1px;">分项合计</div>
+    <div style="display: flex; justify-content: space-between; font-size: 11px; color: #555; line-height: 1.8;">
+      <div>飞书 AI 教练：<span style="font-weight: 600; color: #333;">355 轮</span></div>
+      <div>Codex 编程：<span style="font-weight: 600; color: #333;">293 轮</span></div>
+      <div>Claude 桌面：<span style="font-weight: 600; color: #333;">65 轮</span></div>
+    </div>
+  </div>
+
+  <!-- 合计 -->
+  <div style="padding: 12px 24px; border-bottom: 2px solid #1a3a5c; display: flex; justify-content: space-between; align-items: center;">
+    <div style="font-size: 13px; color: #1a3a5c; font-weight: 700; letter-spacing: 2px;">本期合计</div>
+    <div style="font-size: 28px; font-weight: 800; color: #c23a2b;">713 <span style="font-size: 12px; font-weight: 400; color: #888;">轮</span></div>
+  </div>
+
+  <!-- 底部 -->
+  <div style="padding: 12px 24px;">
+    <div style="font-size: 10px; color: #aaa; line-height: 1.6;">
+      「时间就是金钱。而你花在思考上的每一秒，都是最好的投资。」—— 富兰克林 · 改编
+    </div>
+    <div style="font-size: 9px; color: #ccc; margin-top: 8px;">此对账单由 AI 系统自动生成，仅供参考。如有疑问请联系客服热线：400-AI-TALK</div>
+  </div>
+</div>
+</body>
+</html>

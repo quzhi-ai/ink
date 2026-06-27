@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 390px; height: 520px; overflow: hidden; }
+</style>
+</head>
+<body>
+<div style="font-family: -apple-system, 'SF Pro Display', 'PingFang SC', sans-serif; max-width: 360px; margin: 0 auto;">
+  <h2 class="sr-only">咖啡杯套风格 AI 对话统计卡片</h2>
+
+  <!-- 杯套形状：上宽下窄的梯形 -->
+  <div style="background: #3c2415; border-radius: 20px 20px 16px 16px; padding: 24px 20px 20px; position: relative; overflow: hidden;">
+    <!-- 纹理 -->
+    <div style="position: absolute; inset: 0; background: repeating-linear-gradient(90deg, transparent 0, transparent 8px, rgba(255,255,255,0.015) 8px, rgba(255,255,255,0.015) 9px); pointer-events: none;"></div>
+    <div style="position: absolute; inset: 0; background: repeating-linear-gradient(0deg, transparent 0, transparent 12px, rgba(255,255,255,0.01) 12px, rgba(255,255,255,0.01) 13px); pointer-events: none;"></div>
+
+    <div style="position: relative; z-index: 1;">
+      <!-- LOGO区 -->
+      <div style="text-align: center; margin-bottom: 20px;">
+        <div style="width: 80px; height: 80px; border-radius: 50%; border: 2px solid #c9a96e; margin: 0 auto 10px; display: flex; align-items: center; justify-content: center; background: rgba(201,169,110,0.08);">
+          <div style="text-align: center;">
+            <div style="font-size: 28px; font-weight: 800; color: #c9a96e; line-height: 1;">AI</div>
+            <div style="font-size: 8px; color: #c9a96e; letter-spacing: 2px;">COFFEE</div>
+          </div>
+        </div>
+        <div style="font-size: 14px; color: #c9a96e; letter-spacing: 4px; font-weight: 600;">思维咖啡馆</div>
+        <div style="font-size: 9px; color: rgba(201,169,110,0.5); letter-spacing: 2px; margin-top: 2px;">SINCE 2026 · 深圳</div>
+      </div>
+
+      <!-- 订单 -->
+      <div style="border-top: 1px dashed rgba(201,169,110,0.2); border-bottom: 1px dashed rgba(201,169,110,0.2); padding: 14px 0; margin-bottom: 14px;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 10px;">
+          <span style="font-size: 11px; color: rgba(201,169,110,0.6);">顾客</span>
+          <span style="font-size: 15px; color: #c9a96e; font-weight: 600;">曲直</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 10px;">
+          <span style="font-size: 11px; color: rgba(201,169,110,0.6);">本周杯数</span>
+          <span style="font-size: 32px; color: #c9a96e; font-weight: 800;">713</span>
+        </div>
+        <div style="font-size: 9px; color: rgba(201,169,110,0.4); text-align: center; letter-spacing: 1px;">第26周 · 2026.06.20 – 06.26</div>
+      </div>
+
+      <!-- 咖啡种类 -->
+      <div style="margin-bottom: 14px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px dotted rgba(201,169,110,0.1);">
+          <div style="display: flex; align-items: center; gap: 6px;">
+            <div style="width: 10px; height: 10px; border-radius: 50%; background: #8B6914;"></div>
+            <span style="font-size: 12px; color: #c9a96e;">飞书拿铁</span>
+          </div>
+          <span style="font-size: 14px; color: #c9a96e; font-weight: 700;">355 杯</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px dotted rgba(201,169,110,0.1);">
+          <div style="display: flex; align-items: center; gap: 6px;">
+            <div style="width: 10px; height: 10px; border-radius: 50%; background: #5c3d1e;"></div>
+            <span style="font-size: 12px; color: #c9a96e;">Codex 美式</span>
+          </div>
+          <span style="font-size: 14px; color: #c9a96e; font-weight: 700;">293 杯</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 0;">
+          <div style="display: flex; align-items: center; gap: 6px;">
+            <div style="width: 10px; height: 10px; border-radius: 50%; background: #c9a96e;"></div>
+            <span style="font-size: 12px; color: #c9a96e;">Claude 卡布</span>
+          </div>
+          <span style="font-size: 14px; color: #c9a96e; font-weight: 700;">65 杯</span>
+        </div>
+      </div>
+
+      <!-- 会员 -->
+      <div style="background: rgba(201,169,110,0.08); border: 1px solid rgba(201,169,110,0.15); border-radius: 8px; padding: 10px; text-align: center; margin-bottom: 14px;">
+        <div style="font-size: 9px; color: rgba(201,169,110,0.5); letter-spacing: 2px;">会员等级</div>
+        <div style="font-size: 14px; color: #c9a96e; font-weight: 700; margin-top: 2px;">★★★★★ 黑钻会员</div>
+        <div style="font-size: 10px; color: rgba(201,169,110,0.4); margin-top: 2px;">日均 102 杯 · 峰值 166 杯 · 22:00 常客</div>
+      </div>
+
+      <!-- 金句 -->
+      <div style="text-align: center;">
+        <div style="font-size: 11px; color: rgba(201,169,110,0.7); line-height: 1.7; font-style: italic;">
+          「我量了量我的生活，<br/>用咖啡杯和对话轮次。」
+        </div>
+        <div style="font-size: 9px; color: rgba(201,169,110,0.3); margin-top: 4px;">—— 艾略特 · 改编</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

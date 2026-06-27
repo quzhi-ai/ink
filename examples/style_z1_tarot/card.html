@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 390px; height: 520px; overflow: hidden; }
+</style>
+</head>
+<body>
+<div style="font-family: 'Songti SC', 'Noto Serif SC', Georgia, serif; max-width: 320px; margin: 0 auto; background: #0c0c14; border-radius: 16px; overflow: hidden; border: 2px solid #c8a84e; position: relative; padding: 0;">
+  <h2 class="sr-only">塔罗牌风格 AI 对话统计卡片</h2>
+
+  <!-- 金边内框 -->
+  <div style="margin: 8px; border: 1px solid rgba(200,168,78,0.3); border-radius: 10px; padding: 28px 24px; position: relative; overflow: hidden;">
+
+    <!-- 四角装饰 -->
+    <div style="position: absolute; top: 8px; left: 8px; font-size: 14px; color: rgba(200,168,78,0.3);">✦</div>
+    <div style="position: absolute; top: 8px; right: 8px; font-size: 14px; color: rgba(200,168,78,0.3);">✦</div>
+    <div style="position: absolute; bottom: 8px; left: 8px; font-size: 14px; color: rgba(200,168,78,0.3);">✦</div>
+    <div style="position: absolute; bottom: 8px; right: 8px; font-size: 14px; color: rgba(200,168,78,0.3);">✦</div>
+
+    <!-- 牌号 -->
+    <div style="text-align: center; margin-bottom: 16px;">
+      <div style="font-size: 9px; color: rgba(200,168,78,0.4); letter-spacing: 4px;">XXVI</div>
+      <div style="font-size: 10px; color: rgba(200,168,78,0.5); letter-spacing: 3px; margin-top: 2px;">大阿卡纳</div>
+    </div>
+
+    <!-- 图案区 -->
+    <div style="width: 180px; height: 180px; margin: 0 auto 20px; position: relative; display: flex; align-items: center; justify-content: center;">
+      <!-- 外圈 -->
+      <svg viewBox="0 0 180 180" width="180" height="180" style="position: absolute; top: 0; left: 0;">
+        <circle cx="90" cy="90" r="85" fill="none" stroke="rgba(200,168,78,0.15)" stroke-width="0.5"/>
+        <circle cx="90" cy="90" r="75" fill="none" stroke="rgba(200,168,78,0.1)" stroke-width="0.5"/>
+        <!-- 七芒星 -->
+        <polygon points="90,10 109,58 163,42 130,85 163,128 109,112 90,160 71,112 17,128 50,85 17,42 71,58"
+          fill="none" stroke="rgba(200,168,78,0.12)" stroke-width="0.8"/>
+        <!-- 七个星点代表七天 -->
+        <circle cx="90" cy="10" r="3" fill="rgba(200,168,78,0.35)"/><!-- 周一 顶 -->
+        <circle cx="163" cy="42" r="2.5" fill="rgba(200,168,78,0.25)"/>
+        <circle cx="163" cy="128" r="2" fill="rgba(200,168,78,0.2)"/>
+        <circle cx="109" cy="112" r="2" fill="rgba(200,168,78,0.18)"/>
+        <circle cx="71" cy="112" r="2.5" fill="rgba(200,168,78,0.22)"/>
+        <circle cx="17" cy="42" r="2.5" fill="rgba(200,168,78,0.25)"/>
+        <circle cx="109" cy="58" r="1.5" fill="rgba(200,168,78,0.12)"/>
+      </svg>
+      <!-- 中心数字 -->
+      <div style="text-align: center; position: relative; z-index: 1;">
+        <div style="font-size: 52px; font-weight: 300; color: #c8a84e; line-height: 1; font-family: 'Didot', Georgia, serif;">713</div>
+        <div style="font-size: 10px; color: rgba(200,168,78,0.4); letter-spacing: 3px; margin-top: 4px;">轮 对 话</div>
+      </div>
+    </div>
+
+    <!-- 牌名 -->
+    <div style="text-align: center; margin-bottom: 20px;">
+      <div style="font-size: 22px; font-weight: 700; color: #c8a84e; letter-spacing: 4px;">对 话 者</div>
+      <div style="font-size: 10px; color: rgba(200,168,78,0.35); margin-top: 4px; letter-spacing: 2px;">THE DIALOGIST</div>
+    </div>
+
+    <!-- 三元素 -->
+    <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 20px;">
+      <div style="text-align: center;">
+        <div style="width: 36px; height: 36px; border: 1px solid rgba(200,168,78,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 4px;">
+          <span style="font-size: 14px;">🔥</span>
+        </div>
+        <div style="font-size: 14px; font-weight: 700; color: #c8a84e;">355</div>
+        <div style="font-size: 8px; color: rgba(200,168,78,0.35);">飞书 · 火</div>
+      </div>
+      <div style="text-align: center;">
+        <div style="width: 36px; height: 36px; border: 1px solid rgba(200,168,78,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 4px;">
+          <span style="font-size: 14px;">⚡</span>
+        </div>
+        <div style="font-size: 14px; font-weight: 700; color: #c8a84e;">293</div>
+        <div style="font-size: 8px; color: rgba(200,168,78,0.35);">Codex · 雷</div>
+      </div>
+      <div style="text-align: center;">
+        <div style="width: 36px; height: 36px; border: 1px solid rgba(200,168,78,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 4px;">
+          <span style="font-size: 14px;">🌊</span>
+        </div>
+        <div style="font-size: 14px; font-weight: 700; color: #c8a84e;">65</div>
+        <div style="font-size: 8px; color: rgba(200,168,78,0.35);">Claude · 水</div>
+      </div>
+    </div>
+
+    <!-- 牌意解读 -->
+    <div style="border-top: 1px solid rgba(200,168,78,0.1); padding-top: 16px; margin-bottom: 16px;">
+      <div style="font-size: 9px; color: rgba(200,168,78,0.3); letter-spacing: 2px; margin-bottom: 8px; text-align: center;">牌 意 解 读</div>
+      <div style="font-size: 12px; color: rgba(200,168,78,0.55); line-height: 1.8; text-align: center;">
+        持牌者 <span style="color: #c8a84e;">曲直</span><br/>
+        本周能量充沛，周一达到峰值 166<br/>
+        深夜 22 时第三眼最为活跃<br/>
+        日均 102 轮，稳居「对话者」位格
+      </div>
+    </div>
+
+    <!-- 金句 -->
+    <div style="text-align: center;">
+      <div style="font-size: 13px; color: rgba(200,168,78,0.5); line-height: 1.7; font-style: italic;">
+        「认识你自己。」
+      </div>
+      <div style="font-size: 10px; color: rgba(200,168,78,0.2); margin-top: 6px;">—— 德尔菲神殿铭文</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

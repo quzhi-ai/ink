@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 390px; height: 520px; overflow: hidden; }
+</style>
+</head>
+<body>
+<div style="font-family: 'SF Mono', 'Menlo', 'Courier New', monospace; max-width: 340px; margin: 0 auto; background: #fefcf6; padding: 32px 28px; position: relative; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.1));">
+  <h2 class="sr-only">小票风格 AI 对话统计卡片</h2>
+  <!-- 锯齿顶部 -->
+  <div style="position: absolute; top: -8px; left: 0; right: 0; height: 8px; background: repeating-linear-gradient(90deg, transparent 0, transparent 8px, #fefcf6 8px, #fefcf6 10px, transparent 10px, transparent 18px); background-size: 18px 8px;"></div>
+
+  <!-- 店名 -->
+  <div style="text-align: center; margin-bottom: 20px;">
+    <div style="font-size: 18px; font-weight: 700; color: #1a1a1a; letter-spacing: 4px;">人 机 对 话 小 票</div>
+    <div style="font-size: 11px; color: #999; margin-top: 6px;">HUMAN × AI DIALOGUE RECEIPT</div>
+  </div>
+
+  <div style="border-top: 2px dashed #ddd; margin-bottom: 16px;"></div>
+
+  <!-- 客户信息 -->
+  <div style="font-size: 12px; color: #555; line-height: 2;">
+    <div style="display: flex; justify-content: space-between;">
+      <span>顾客</span><span style="color: #1a1a1a; font-weight: 600;">曲直</span>
+    </div>
+    <div style="display: flex; justify-content: space-between;">
+      <span>账期</span><span>2026.06.20 – 06.26</span>
+    </div>
+    <div style="display: flex; justify-content: space-between;">
+      <span>打印时间</span><span>2026.06.26 22:00</span>
+    </div>
+  </div>
+
+  <div style="border-top: 1px dashed #ddd; margin: 14px 0;"></div>
+
+  <!-- 明细 -->
+  <div style="font-size: 12px; color: #333; line-height: 2.2;">
+    <div style="display: flex; justify-content: space-between; font-weight: 700; color: #1a1a1a; margin-bottom: 4px;">
+      <span>品名</span><span>数量</span>
+    </div>
+    <div style="display: flex; justify-content: space-between;">
+      <span>飞书 AI 教练</span><span>×355</span>
+    </div>
+    <div style="display: flex; justify-content: space-between;">
+      <span>Codex 编程助手</span><span>×293</span>
+    </div>
+    <div style="display: flex; justify-content: space-between;">
+      <span>Claude 桌面端</span><span>×65</span>
+    </div>
+  </div>
+
+  <div style="border-top: 2px dashed #ddd; margin: 14px 0;"></div>
+
+  <!-- 合计 -->
+  <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px;">
+    <span style="font-size: 14px; font-weight: 700; color: #1a1a1a;">合计</span>
+    <span style="font-size: 32px; font-weight: 900; color: #1a1a1a;">713 轮</span>
+  </div>
+
+  <div style="border-top: 1px dashed #ddd; margin: 14px 0;"></div>
+
+  <!-- 统计 -->
+  <div style="font-size: 11px; color: #888; line-height: 2;">
+    <div style="display: flex; justify-content: space-between;">
+      <span>日均消费</span><span style="color: #555;">102 轮/天</span>
+    </div>
+    <div style="display: flex; justify-content: space-between;">
+      <span>单日峰值</span><span style="color: #555;">166 轮 (周一)</span>
+    </div>
+    <div style="display: flex; justify-content: space-between;">
+      <span>活跃时段</span><span style="color: #555;">22:00 夜猫子档</span>
+    </div>
+    <div style="display: flex; justify-content: space-between;">
+      <span>休息时段</span><span style="color: #555;">01:00 – 07:00</span>
+    </div>
+  </div>
+
+  <div style="border-top: 1px dashed #ddd; margin: 14px 0;"></div>
+
+  <!-- 每日明细 -->
+  <div style="font-size: 11px; color: #999; text-align: center; margin-bottom: 8px;">── 每日明细 ──</div>
+  <div style="font-size: 11px; color: #666; line-height: 2;">
+    <div style="display: flex; justify-content: space-between;"><span>周五 06/20</span><span>▓▓▓▓▓▓▓▓▓░　91</span></div>
+    <div style="display: flex; justify-content: space-between;"><span>周六 06/21</span><span>▓▓▓▓▓▓▓▓▓▓▓ 109</span></div>
+    <div style="display: flex; justify-content: space-between;"><span>周日 06/22</span><span>▓▓▓▓▓▓▓▓▓▓░　97</span></div>
+    <div style="display: flex; justify-content: space-between;"><span style="color: #1a1a1a; font-weight: 600;">周一 06/23</span><span style="color: #1a1a1a; font-weight: 600;">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 166 ★</span></div>
+    <div style="display: flex; justify-content: space-between;"><span>周二 06/24</span><span>▓▓▓▓▓▓▓▓▓▓▓▓▓ 133</span></div>
+    <div style="display: flex; justify-content: space-between;"><span>周三 06/25</span><span>▓▓▓▓▓▓▓▓░░░　78</span></div>
+    <div style="display: flex; justify-content: space-between;"><span style="color: #bbb;">周四 06/26</span><span style="color: #bbb;">▓▓▓▓░░░░░░░　39 …</span></div>
+  </div>
+
+  <div style="border-top: 2px dashed #ddd; margin: 18px 0 14px;"></div>
+
+  <!-- 金句 -->
+  <div style="text-align: center; padding: 0 8px;">
+    <div style="font-size: 13px; color: #555; line-height: 1.8; font-family: 'PingFang SC', 'Noto Sans SC', sans-serif;">
+      「提出一个问题，<br/>往往比解决一个问题更重要。」
+    </div>
+    <div style="font-size: 10px; color: #bbb; margin-top: 6px;">—— 爱因斯坦</div>
+  </div>
+
+  <div style="border-top: 1px dashed #ddd; margin: 16px 0 12px;"></div>
+
+  <!-- 底部 -->
+  <div style="text-align: center;">
+    <div style="font-size: 10px; color: #ccc; letter-spacing: 1px;">感谢光临 · 欢迎下次继续提问</div>
+    <div style="margin-top: 12px; font-size: 28px; letter-spacing: -2px; color: #ddd;">|||||| |||| ||||| ||||||</div>
+    <div style="font-size: 9px; color: #ddd; margin-top: 2px;">2026062026</div>
+  </div>
+
+  <!-- 锯齿底部 -->
+  <div style="position: absolute; bottom: -8px; left: 0; right: 0; height: 8px; background: repeating-linear-gradient(90deg, transparent 0, transparent 8px, #fefcf6 8px, #fefcf6 10px, transparent 10px, transparent 18px); background-size: 18px 8px;"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 390px; height: 520px; overflow: hidden; }
+</style>
+</head>
+<body>
+<div style="font-family: -apple-system, 'SF Pro Display', 'PingFang SC', sans-serif; max-width: 520px; margin: 0 auto; display: flex; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 16px rgba(0,0,0,0.08); position: relative;">
+  <h2 class="sr-only">登机牌风格 AI 对话统计卡片</h2>
+
+  <!-- 主票 -->
+  <div style="flex: 1; padding: 28px 24px; position: relative;">
+    <!-- 航司 -->
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+      <div>
+        <div style="font-size: 16px; font-weight: 800; color: #1a1a1a; letter-spacing: 2px;">人机航空</div>
+        <div style="font-size: 9px; color: #bbb; letter-spacing: 1px;">HUMAN×AI AIRLINES</div>
+      </div>
+      <div style="font-size: 9px; color: #999; text-align: right;">
+        <div>航班 <span style="font-size: 14px; font-weight: 700; color: #1a1a1a;">HA-W26</span></div>
+        <div style="margin-top: 2px;">2026年6月</div>
+      </div>
+    </div>
+
+    <!-- 出发 → 到达 -->
+    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
+      <div style="flex: 1;">
+        <div style="font-size: 36px; font-weight: 800; color: #1a1a1a; line-height: 1;">6/20</div>
+        <div style="font-size: 11px; color: #999; margin-top: 2px;">周五 · 出发</div>
+      </div>
+      <div style="flex: 1; text-align: center; position: relative;">
+        <div style="height: 1px; background: #ddd; position: absolute; top: 50%; left: 0; right: 0; transform: translateY(-50%);"></div>
+        <div style="position: relative; z-index: 1; background: #fff; display: inline-block; padding: 0 8px;">
+          <div style="font-size: 28px; font-weight: 800; color: #e63946;">713</div>
+          <div style="font-size: 8px; color: #e63946; letter-spacing: 1px;">轮对话</div>
+        </div>
+      </div>
+      <div style="flex: 1; text-align: right;">
+        <div style="font-size: 36px; font-weight: 800; color: #1a1a1a; line-height: 1;">6/26</div>
+        <div style="font-size: 11px; color: #999; margin-top: 2px;">周四 · 到达</div>
+      </div>
+    </div>
+
+    <!-- 信息格 -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-bottom: 20px;">
+      <div style="background: #f8f8f8; border-radius: 6px; padding: 10px;">
+        <div style="font-size: 8px; color: #bbb; text-transform: uppercase; letter-spacing: 1px;">旅客</div>
+        <div style="font-size: 14px; font-weight: 700; color: #1a1a1a; margin-top: 2px;">曲直</div>
+      </div>
+      <div style="background: #f8f8f8; border-radius: 6px; padding: 10px;">
+        <div style="font-size: 8px; color: #bbb; text-transform: uppercase; letter-spacing: 1px;">舱位</div>
+        <div style="font-size: 14px; font-weight: 700; color: #1a1a1a; margin-top: 2px;">深度用户</div>
+      </div>
+      <div style="background: #f8f8f8; border-radius: 6px; padding: 10px;">
+        <div style="font-size: 8px; color: #bbb; text-transform: uppercase; letter-spacing: 1px;">登机口</div>
+        <div style="font-size: 14px; font-weight: 700; color: #1a1a1a; margin-top: 2px;">22:00</div>
+      </div>
+    </div>
+
+    <!-- 来源航段 -->
+    <div style="display: flex; gap: 4px; height: 24px; border-radius: 4px; overflow: hidden; margin-bottom: 16px;">
+      <div style="flex: 355; background: #1a1a1a; display: flex; align-items: center; justify-content: center;">
+        <span style="font-size: 8px; color: #fff; font-weight: 600;">飞书 355</span>
+      </div>
+      <div style="flex: 293; background: #e63946; display: flex; align-items: center; justify-content: center;">
+        <span style="font-size: 8px; color: #fff; font-weight: 600;">Codex 293</span>
+      </div>
+      <div style="flex: 65; background: #999; display: flex; align-items: center; justify-content: center;">
+        <span style="font-size: 8px; color: #fff; font-weight: 600;">Claude</span>
+      </div>
+    </div>
+
+    <!-- 每日 -->
+    <div style="display: flex; gap: 4px; align-items: flex-end; height: 40px; margin-bottom: 4px;">
+      <div style="flex:1; background:#1a1a1a; border-radius:2px 2px 0 0; height:54.8%;"></div>
+      <div style="flex:1; background:#1a1a1a; border-radius:2px 2px 0 0; height:65.7%;"></div>
+      <div style="flex:1; background:#1a1a1a; border-radius:2px 2px 0 0; height:58.4%;"></div>
+      <div style="flex:1; background:#e63946; border-radius:2px 2px 0 0; height:100%;"></div>
+      <div style="flex:1; background:#1a1a1a; border-radius:2px 2px 0 0; height:80.1%;"></div>
+      <div style="flex:1; background:#1a1a1a; border-radius:2px 2px 0 0; height:47%;"></div>
+      <div style="flex:1; background:#ccc; border-radius:2px 2px 0 0; height:23.5%;"></div>
+    </div>
+    <div style="display:flex; gap:4px;">
+      <div style="flex:1; text-align:center; font-size:7px; color:#bbb;">五</div>
+      <div style="flex:1; text-align:center; font-size:7px; color:#bbb;">六</div>
+      <div style="flex:1; text-align:center; font-size:7px; color:#bbb;">日</div>
+      <div style="flex:1; text-align:center; font-size:7px; color:#e63946; font-weight:700;">一</div>
+      <div style="flex:1; text-align:center; font-size:7px; color:#bbb;">二</div>
+      <div style="flex:1; text-align:center; font-size:7px; color:#bbb;">三</div>
+      <div style="flex:1; text-align:center; font-size:7px; color:#ccc;">四</div>
+    </div>
+
+    <!-- 金句 -->
+    <div style="margin-top: 16px; padding-top: 12px; border-top: 1px dashed #e0e0e0;">
+      <div style="font-size: 12px; color: #666; line-height: 1.6; font-style: italic;">「旅行的意义不在于到达，而在于沿途的对话。」</div>
+      <div style="font-size: 9px; color: #ccc; margin-top: 4px; text-align: right;">—— 一个经常和 AI 聊天的人</div>
+    </div>
+  </div>
+
+  <!-- 锯齿分割 -->
+  <div style="width: 24px; position: relative; flex-shrink: 0;">
+    <div style="position: absolute; top: 0; bottom: 0; left: 50%; width: 1px; border-left: 2px dashed #e0e0e0;"></div>
+    <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); width: 24px; height: 24px; border-radius: 50%; background: #f0f0f0;"></div>
+    <div style="position: absolute; bottom: -12px; left: 50%; transform: translateX(-50%); width: 24px; height: 24px; border-radius: 50%; background: #f0f0f0;"></div>
+  </div>
+
+  <!-- 副券 -->
+  <div style="width: 120px; padding: 28px 16px; display: flex; flex-direction: column; justify-content: space-between; align-items: center; flex-shrink: 0;">
+    <div style="text-align: center;">
+      <div style="font-size: 8px; color: #bbb; letter-spacing: 1px;">航班</div>
+      <div style="font-size: 16px; font-weight: 800; color: #1a1a1a;">HA-W26</div>
+    </div>
+    <div style="transform: rotate(90deg); white-space: nowrap; font-size: 9px; color: #ddd; letter-spacing: 1px;">曲直 · QUZHI</div>
+    <div style="text-align: center;">
+      <div style="font-size: 28px; font-weight: 800; color: #e63946; line-height: 1;">713</div>
+      <div style="font-size: 8px; color: #999; margin-top: 2px;">总轮次</div>
+    </div>
+    <div style="font-size: 20px; letter-spacing: -1px; color: #ddd; transform: rotate(90deg); white-space: nowrap;">||| |||| ||| ||||</div>
+  </div>
+</div>
+</body>
+</html>

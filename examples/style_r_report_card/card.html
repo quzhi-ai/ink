@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 390px; height: 520px; overflow: hidden; }
+</style>
+</head>
+<body>
+<div style="font-family: 'Songti SC', 'Noto Serif SC', 'STSong', serif; max-width: 420px; margin: 0 auto; background: #fff; border: 2px solid #c0392b; position: relative; padding: 0;">
+  <h2 class="sr-only">成绩单风格 AI 对话统计卡片</h2>
+
+  <!-- 校徽头部 -->
+  <div style="background: #c0392b; padding: 14px 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="font-size: 18px; font-weight: 700; color: #fff; letter-spacing: 4px;">人机大学</div>
+    <div style="font-size: 10px; color: rgba(255,255,255,0.6);">成 绩 通 知 单</div>
+  </div>
+
+  <div style="padding: 24px;">
+    <!-- 学生信息 -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4px; font-size: 12px; color: #333; line-height: 2.2; margin-bottom: 16px; border-bottom: 1px solid #eee; padding-bottom: 12px;">
+      <div>姓名：<span style="border-bottom: 1px solid #333; padding-bottom: 1px; font-weight: 700;">曲直</span></div>
+      <div>学号：<span style="border-bottom: 1px solid #333; padding-bottom: 1px;">W26-0626</span></div>
+      <div>学期：<span style="border-bottom: 1px solid #333; padding-bottom: 1px;">2026 年第 26 周</span></div>
+      <div>班级：<span style="border-bottom: 1px solid #333; padding-bottom: 1px;">深度用户班</span></div>
+    </div>
+
+    <!-- 成绩表 -->
+    <table style="width: 100%; border-collapse: collapse; font-size: 12px; margin-bottom: 16px;">
+      <thead>
+        <tr style="background: #f8f8f8;">
+          <th style="border: 1px solid #ddd; padding: 8px; text-align: left; color: #666; font-weight: 600;">科目</th>
+          <th style="border: 1px solid #ddd; padding: 8px; text-align: center; color: #666; font-weight: 600;">轮次</th>
+          <th style="border: 1px solid #ddd; padding: 8px; text-align: center; color: #666; font-weight: 600;">评级</th>
+          <th style="border: 1px solid #ddd; padding: 8px; text-align: center; color: #666; font-weight: 600;">教师评语</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="border: 1px solid #ddd; padding: 8px; font-weight: 600;">飞书 AI 教练</td>
+          <td style="border: 1px solid #ddd; padding: 8px; text-align: center; font-weight: 700; font-size: 16px;">355</td>
+          <td style="border: 1px solid #ddd; padding: 8px; text-align: center; color: #c0392b; font-weight: 800; font-size: 18px;">A+</td>
+          <td style="border: 1px solid #ddd; padding: 8px; font-size: 10px; color: #888;">全勤，主力科目</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid #ddd; padding: 8px; font-weight: 600;">Codex 编程</td>
+          <td style="border: 1px solid #ddd; padding: 8px; text-align: center; font-weight: 700; font-size: 16px;">293</td>
+          <td style="border: 1px solid #ddd; padding: 8px; text-align: center; color: #c0392b; font-weight: 800; font-size: 18px;">A</td>
+          <td style="border: 1px solid #ddd; padding: 8px; font-size: 10px; color: #888;">深夜加练突出</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid #ddd; padding: 8px; font-weight: 600;">Claude 桌面</td>
+          <td style="border: 1px solid #ddd; padding: 8px; text-align: center; font-weight: 700; font-size: 16px;">65</td>
+          <td style="border: 1px solid #ddd; padding: 8px; text-align: center; color: #e67e22; font-weight: 800; font-size: 18px;">B+</td>
+          <td style="border: 1px solid #ddd; padding: 8px; font-size: 10px; color: #888;">新课，进步快</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr style="background: #fdf2f2;">
+          <td style="border: 1px solid #ddd; padding: 8px; font-weight: 700;">总计</td>
+          <td style="border: 1px solid #ddd; padding: 8px; text-align: center; font-weight: 800; font-size: 20px; color: #c0392b;">713</td>
+          <td style="border: 1px solid #ddd; padding: 8px; text-align: center; font-weight: 800; font-size: 20px; color: #c0392b;">A+</td>
+          <td style="border: 1px solid #ddd; padding: 8px; font-size: 10px; color: #c0392b; font-weight: 600;">年级第一 🏆</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- 附加评价 -->
+    <div style="margin-bottom: 16px;">
+      <div style="font-size: 11px; color: #999; margin-bottom: 6px;">出勤统计</div>
+      <div style="display: flex; gap: 4px; margin-bottom: 4px;">
+        <div style="flex:91; height:16px; background:#c0392b; border-radius:2px; display:flex; align-items:center; justify-content:center;"><span style="font-size:7px; color:#fff;">91</span></div>
+        <div style="flex:109; height:16px; background:#c0392b; border-radius:2px; display:flex; align-items:center; justify-content:center;"><span style="font-size:7px; color:#fff;">109</span></div>
+        <div style="flex:97; height:16px; background:#c0392b; border-radius:2px; display:flex; align-items:center; justify-content:center;"><span style="font-size:7px; color:#fff;">97</span></div>
+        <div style="flex:166; height:16px; background:#8e1c1c; border-radius:2px; display:flex; align-items:center; justify-content:center;"><span style="font-size:7px; color:#fff; font-weight:700;">166 ★</span></div>
+        <div style="flex:133; height:16px; background:#c0392b; border-radius:2px; display:flex; align-items:center; justify-content:center;"><span style="font-size:7px; color:#fff;">133</span></div>
+        <div style="flex:78; height:16px; background:#c0392b; border-radius:2px; display:flex; align-items:center; justify-content:center;"><span style="font-size:7px; color:#fff;">78</span></div>
+        <div style="flex:39; height:16px; background:#ddd; border-radius:2px; display:flex; align-items:center; justify-content:center;"><span style="font-size:7px; color:#999;">39</span></div>
+      </div>
+      <div style="display: flex; gap: 4px;">
+        <div style="flex:91; text-align:center; font-size:7px; color:#bbb;">五</div>
+        <div style="flex:109; text-align:center; font-size:7px; color:#bbb;">六</div>
+        <div style="flex:97; text-align:center; font-size:7px; color:#bbb;">日</div>
+        <div style="flex:166; text-align:center; font-size:7px; color:#8e1c1c; font-weight:600;">一</div>
+        <div style="flex:133; text-align:center; font-size:7px; color:#bbb;">二</div>
+        <div style="flex:78; text-align:center; font-size:7px; color:#bbb;">三</div>
+        <div style="flex:39; text-align:center; font-size:7px; color:#ccc;">四</div>
+      </div>
+    </div>
+
+    <!-- 班主任评语 -->
+    <div style="border: 1px solid #eee; border-radius: 6px; padding: 14px; margin-bottom: 14px; background: #fefefe;">
+      <div style="font-size: 10px; color: #999; margin-bottom: 6px;">班主任评语</div>
+      <div style="font-size: 13px; color: #444; line-height: 1.8; font-family: 'STKaiti', 'KaiTi', cursive;">
+        该同学本周表现优异，日均对话过百，周一爆发力尤为突出。深夜 22 时仍在请教，求知精神可嘉。望下周保持势头，注意休息。
+      </div>
+    </div>
+
+    <!-- 金句 -->
+    <div style="border-top: 1px solid #eee; padding-top: 12px;">
+      <div style="font-size: 13px; color: #555; line-height: 1.7; text-align: center;">
+        「学而不思则罔，思而不问则殆。<br/>问而不止则……就是本周的你。」
+      </div>
+      <div style="font-size: 10px; color: #bbb; margin-top: 6px; text-align: center;">—— 孔子 · 2026 改编</div>
+    </div>
+
+    <!-- 签章 -->
+    <div style="display: flex; justify-content: flex-end; margin-top: 12px;">
+      <div style="width: 60px; height: 60px; border: 2px solid rgba(192,57,43,0.25); border-radius: 50%; display: flex; align-items: center; justify-content: center; transform: rotate(-8deg);">
+        <div style="text-align: center;">
+          <div style="font-size: 10px; color: rgba(192,57,43,0.5); font-weight: 700;">人机大学</div>
+          <div style="font-size: 7px; color: rgba(192,57,43,0.35);">教务处章</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

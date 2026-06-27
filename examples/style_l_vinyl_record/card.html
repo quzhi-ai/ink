@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 390px; height: 520px; overflow: hidden; }
+</style>
+</head>
+<body>
+<div style="font-family: -apple-system, 'SF Pro Display', 'PingFang SC', sans-serif; max-width: 420px; margin: 0 auto; background: #1a1816; border-radius: 16px; overflow: hidden; padding: 36px 28px 32px; position: relative;">
+  <h2 class="sr-only">黑胶唱片风格 AI 对话统计卡片</h2>
+
+  <!-- 唱片封套标题 -->
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 28px;">
+    <div>
+      <div style="font-size: 10px; color: rgba(255,255,255,0.25); letter-spacing: 3px; margin-bottom: 6px;">曲直 · 第二十六周</div>
+      <div style="font-size: 24px; font-weight: 700; color: #e8dcc8; letter-spacing: 2px; line-height: 1.3;">七日人机<br/>协奏曲</div>
+    </div>
+    <div style="text-align: right;">
+      <div style="font-size: 9px; color: rgba(255,255,255,0.2); letter-spacing: 1px;">发行于</div>
+      <div style="font-size: 11px; color: rgba(255,255,255,0.4);">2026.06.26</div>
+    </div>
+  </div>
+
+  <!-- 唱片 -->
+  <div style="position: relative; width: 260px; height: 260px; margin: 0 auto 28px;">
+    <svg viewBox="0 0 260 260" width="260" height="260">
+      <!-- 唱片底 -->
+      <circle cx="130" cy="130" r="128" fill="#111" stroke="#333" stroke-width="1"/>
+      <!-- 音轨 -->
+      <circle cx="130" cy="130" r="115" fill="none" stroke="#222" stroke-width="0.5"/>
+      <circle cx="130" cy="130" r="108" fill="none" stroke="#252525" stroke-width="0.5"/>
+      <circle cx="130" cy="130" r="101" fill="none" stroke="#222" stroke-width="0.5"/>
+      <circle cx="130" cy="130" r="94" fill="none" stroke="#252525" stroke-width="0.5"/>
+      <circle cx="130" cy="130" r="87" fill="none" stroke="#222" stroke-width="0.5"/>
+      <circle cx="130" cy="130" r="80" fill="none" stroke="#252525" stroke-width="0.5"/>
+      <circle cx="130" cy="130" r="73" fill="none" stroke="#222" stroke-width="0.5"/>
+
+      <!-- 七天 = 七段弧, 不同亮度 -->
+      <!-- 周五 91 -->
+      <circle cx="130" cy="130" r="115" fill="none" stroke="#8B7355" stroke-width="5" opacity="0.55"
+        stroke-dasharray="51.8 51.8 0 619" transform="rotate(-90 130 130)"/>
+      <!-- 周六 109 -->
+      <circle cx="130" cy="130" r="108" fill="none" stroke="#8B7355" stroke-width="5" opacity="0.66"
+        stroke-dasharray="51.8 51.8 0 575" transform="rotate(-39 130 130)"/>
+      <!-- 周日 97 -->
+      <circle cx="130" cy="130" r="101" fill="none" stroke="#8B7355" stroke-width="5" opacity="0.58"
+        stroke-dasharray="51.8 51.8 0 533" transform="rotate(12 130 130)"/>
+      <!-- 周一 166 ★ -->
+      <circle cx="130" cy="130" r="94" fill="none" stroke="#D4A854" stroke-width="5" opacity="1"
+        stroke-dasharray="51.8 51.8 0 489" transform="rotate(63 130 130)"/>
+      <!-- 周二 133 -->
+      <circle cx="130" cy="130" r="87" fill="none" stroke="#8B7355" stroke-width="5" opacity="0.8"
+        stroke-dasharray="51.8 51.8 0 445" transform="rotate(114 130 130)"/>
+      <!-- 周三 78 -->
+      <circle cx="130" cy="130" r="80" fill="none" stroke="#8B7355" stroke-width="5" opacity="0.47"
+        stroke-dasharray="51.8 51.8 0 401" transform="rotate(165 130 130)"/>
+      <!-- 周四 39 -->
+      <circle cx="130" cy="130" r="73" fill="none" stroke="#8B7355" stroke-width="5" opacity="0.24"
+        stroke-dasharray="51.8 51.8 0 357" transform="rotate(216 130 130)"/>
+
+      <!-- 光泽 -->
+      <circle cx="130" cy="130" r="120" fill="none" stroke="url(#sheen)" stroke-width="30" opacity="0.06"/>
+      <defs>
+        <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#fff" stop-opacity="1"/>
+          <stop offset="50%" stop-color="#fff" stop-opacity="0"/>
+          <stop offset="100%" stop-color="#fff" stop-opacity="0.5"/>
+        </linearGradient>
+      </defs>
+
+      <!-- 中心标签 -->
+      <circle cx="130" cy="130" r="42" fill="#C23A2B"/>
+      <circle cx="130" cy="130" r="40" fill="#B8332A"/>
+      <circle cx="130" cy="130" r="6" fill="#1a1816"/>
+      <circle cx="130" cy="130" r="4" fill="#333"/>
+
+      <!-- 标签文字 -->
+      <text x="130" y="118" text-anchor="middle" fill="#e8dcc8" font-size="22" font-weight="800" font-family="'DIN Alternate','Helvetica Neue',sans-serif">713</text>
+      <text x="130" y="132" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="8" letter-spacing="1" font-family="'PingFang SC',sans-serif">轮对话</text>
+      <text x="130" y="148" text-anchor="middle" fill="rgba(255,255,255,0.35)" font-size="7" font-family="'PingFang SC',sans-serif">日均 102 · 峰值 166</text>
+    </svg>
+  </div>
+
+  <!-- 曲目列表 -->
+  <div style="margin-bottom: 24px;">
+    <div style="font-size: 9px; color: rgba(255,255,255,0.2); letter-spacing: 2px; margin-bottom: 10px;">曲 目 列 表</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.5); line-height: 2.2;">
+      <div style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 2px;">
+        <span><span style="color: rgba(255,255,255,0.2); margin-right: 8px;">A1</span>飞书 AI 教练</span>
+        <span style="color: #e8dcc8; font-weight: 600;">355 轮</span>
+      </div>
+      <div style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 2px;">
+        <span><span style="color: rgba(255,255,255,0.2); margin-right: 8px;">A2</span>Codex 编程助手</span>
+        <span style="color: #e8dcc8; font-weight: 600;">293 轮</span>
+      </div>
+      <div style="display: flex; justify-content: space-between;">
+        <span><span style="color: rgba(255,255,255,0.2); margin-right: 8px;">B1</span>Claude 桌面端</span>
+        <span style="color: #e8dcc8; font-weight: 600;">65 轮</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 金句 -->
+  <div style="border-top: 1px solid rgba(255,255,255,0.06); padding-top: 18px;">
+    <div style="font-size: 13px; color: rgba(255,255,255,0.45); line-height: 1.7; text-align: center; font-family: 'PingFang SC', sans-serif;">
+      「世界上只有一种英雄主义：<br/>认清生活的真相后，依然热爱它。」
+    </div>
+    <div style="font-size: 10px; color: rgba(255,255,255,0.15); margin-top: 8px; text-align: center;">—— 罗曼·罗兰</div>
+  </div>
+</div>
+</body>
+</html>

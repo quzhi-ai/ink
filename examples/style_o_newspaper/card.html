@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 390px; height: 520px; overflow: hidden; }
+</style>
+</head>
+<body>
+<div style="font-family: 'Songti SC', 'Noto Serif SC', 'STSong', Georgia, serif; max-width: 460px; margin: 0 auto; background: #f5f0e0; padding: 28px 24px; position: relative; border: 1px solid #d4c8a0;">
+  <h2 class="sr-only">民国老报纸风格 AI 对话统计卡片</h2>
+
+  <!-- 做旧 -->
+  <div style="position: absolute; inset: 0; background: radial-gradient(ellipse at 30% 20%, rgba(180,150,80,0.08) 0%, transparent 50%), radial-gradient(ellipse at 80% 80%, rgba(150,120,60,0.06) 0%, transparent 40%); pointer-events: none;"></div>
+
+  <div style="position: relative; z-index: 1;">
+    <!-- 报头 -->
+    <div style="text-align: center; border-bottom: 3px double #4a3520; padding-bottom: 14px; margin-bottom: 14px;">
+      <div style="font-size: 10px; color: #8a7040; letter-spacing: 6px; margin-bottom: 6px;">公元二〇二六年六月二十六日</div>
+      <div style="font-size: 38px; font-weight: 900; color: #2c1810; letter-spacing: 8px; line-height: 1;">人机日报</div>
+      <div style="display: flex; justify-content: space-between; margin-top: 8px; font-size: 9px; color: #8a7040;">
+        <span>第贰拾陆周刊</span>
+        <span>星期四</span>
+        <span>深圳发行</span>
+      </div>
+    </div>
+
+    <!-- 头条 -->
+    <div style="text-align: center; margin-bottom: 16px;">
+      <div style="font-size: 11px; color: #c23a2b; letter-spacing: 3px; margin-bottom: 8px;">◆ 号 外 ◆</div>
+      <div style="font-size: 24px; font-weight: 900; color: #2c1810; letter-spacing: 3px; line-height: 1.4;">
+        曲直先生一周内<br/>向机器提问七百一十三次
+      </div>
+      <div style="font-size: 12px; color: #6a5530; margin-top: 8px; line-height: 1.6;">
+        本报讯　据统计，本市居民曲直先生于六月二十日至二十六日间，<br/>
+        累计向三台人工智能系统发出对话七百一十三轮，日均逾百。
+      </div>
+    </div>
+
+    <div style="height: 2px; background: #2c1810; margin-bottom: 14px;"></div>
+
+    <!-- 两栏正文 -->
+    <div style="display: flex; gap: 16px; margin-bottom: 16px;">
+      <!-- 左栏 -->
+      <div style="flex: 1; border-right: 1px solid #d4c090; padding-right: 16px;">
+        <div style="font-size: 13px; font-weight: 700; color: #2c1810; margin-bottom: 8px; letter-spacing: 1px;">▍三大渠道详情</div>
+        <div style="font-size: 11px; color: #4a3520; line-height: 2.2;">
+          <div style="display: flex; justify-content: space-between;">
+            <span>一、飞书 AI 教练</span><span style="font-weight: 700;">355 轮</span>
+          </div>
+          <div style="display: flex; justify-content: space-between;">
+            <span>二、Codex 编程</span><span style="font-weight: 700;">293 轮</span>
+          </div>
+          <div style="display: flex; justify-content: space-between;">
+            <span>三、Claude 桌面</span><span style="font-weight: 700;">65 轮</span>
+          </div>
+        </div>
+        <div style="font-size: 10px; color: #8a7040; margin-top: 8px; line-height: 1.6;">
+          记者注：飞书渠道占总量近五成，编程类需求逾四成，桌面端系六月二十三日方才启用。
+        </div>
+      </div>
+
+      <!-- 右栏 -->
+      <div style="flex: 1;">
+        <div style="font-size: 13px; font-weight: 700; color: #2c1810; margin-bottom: 8px; letter-spacing: 1px;">▍本周逐日统计</div>
+        <div style="font-size: 11px; color: #4a3520; line-height: 2.2;">
+          <div style="display: flex; justify-content: space-between;">
+            <span>廿日（五）</span><span>九十一轮</span>
+          </div>
+          <div style="display: flex; justify-content: space-between;">
+            <span>廿一（六）</span><span>一百零九轮</span>
+          </div>
+          <div style="display: flex; justify-content: space-between;">
+            <span>廿二（日）</span><span>九十七轮</span>
+          </div>
+          <div style="display: flex; justify-content: space-between;">
+            <span style="color: #c23a2b; font-weight: 700;">廿三（一）</span><span style="color: #c23a2b; font-weight: 700;">一百六十六轮 ▲</span>
+          </div>
+          <div style="display: flex; justify-content: space-between;">
+            <span>廿四（二）</span><span>一百三十三轮</span>
+          </div>
+          <div style="display: flex; justify-content: space-between;">
+            <span>廿五（三）</span><span>七十八轮</span>
+          </div>
+          <div style="display: flex; justify-content: space-between;">
+            <span style="color: #aaa;">廿六（四）</span><span style="color: #aaa;">三十九轮（截稿）</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="height: 1px; background: #d4c090; margin-bottom: 12px;"></div>
+
+    <!-- 专栏 -->
+    <div style="margin-bottom: 14px;">
+      <div style="font-size: 11px; font-weight: 700; color: #2c1810; margin-bottom: 6px; letter-spacing: 1px;">▍特约评论员手记</div>
+      <div style="font-size: 12px; color: #4a3520; line-height: 1.8; text-indent: 2em;">
+        高峰时段为每日亥时（22:00），可见曲直先生深夜犹与机器论道不辍，日均百轮有余，堪称人机交互之先行者。
+      </div>
+    </div>
+
+    <!-- 副刊金句 -->
+    <div style="border-top: 2px solid #2c1810; padding-top: 12px;">
+      <div style="display: flex; gap: 12px; align-items: flex-start;">
+        <div style="font-size: 9px; color: #c23a2b; letter-spacing: 2px; writing-mode: vertical-rl; flex-shrink: 0; border: 1px solid #c23a2b; padding: 4px 2px; border-radius: 2px;">副刊</div>
+        <div>
+          <div style="font-size: 14px; color: #2c1810; line-height: 1.8; letter-spacing: 1px;">
+            「未经审视的人生不值得过。<br/>　未经提问的答案不值得信。」
+          </div>
+          <div style="font-size: 10px; color: #8a7040; margin-top: 6px;">—— 苏格拉底 · 2026 年改编</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

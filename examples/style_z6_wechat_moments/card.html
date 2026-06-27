@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 390px; height: 520px; overflow: hidden; }
+</style>
+</head>
+<body>
+<div style="font-family: -apple-system, 'SF Pro Display', 'PingFang SC', sans-serif; max-width: 420px; margin: 0 auto; background: #111; border-radius: 0; overflow: hidden;">
+  <h2 class="sr-only">微信朋友圈风格 AI 对话统计卡片</h2>
+
+  <!-- 朋友圈头部 -->
+  <div style="padding: 14px 16px; display: flex; gap: 12px;">
+    <!-- 头像 -->
+    <div style="width: 44px; height: 44px; border-radius: 6px; background: linear-gradient(135deg, #3b82f6, #8b5cf6); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+      <span style="font-size: 20px; font-weight: 800; color: #fff;">曲</span>
+    </div>
+    <div style="flex: 1;">
+      <div style="font-size: 15px; font-weight: 600; color: #576b95; margin-bottom: 4px;">曲直</div>
+      <div style="font-size: 13px; color: #ddd; line-height: 1.6; margin-bottom: 10px;">
+        本周和 AI 聊了 713 轮。周一 166 轮创纪录。我是不是该反思一下？算了，反思也是要问 AI 的。
+      </div>
+
+      <!-- 九宫格图片 -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 3px; margin-bottom: 10px;">
+        <!-- 图1: 总数 -->
+        <div style="aspect-ratio: 1; background: linear-gradient(135deg, #1a1a2e, #16213e); display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 2px;">
+          <div style="font-size: 28px; font-weight: 800; color: #fff;">713</div>
+          <div style="font-size: 8px; color: rgba(255,255,255,0.4);">总轮次</div>
+        </div>
+        <!-- 图2: 飞书 -->
+        <div style="aspect-ratio: 1; background: linear-gradient(135deg, #1e3a5f, #2563eb33); display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 2px;">
+          <div style="font-size: 22px; font-weight: 700; color: #60a5fa;">355</div>
+          <div style="font-size: 8px; color: rgba(96,165,250,0.6);">飞书</div>
+        </div>
+        <!-- 图3: Codex -->
+        <div style="aspect-ratio: 1; background: linear-gradient(135deg, #2d1b4e, #7c3aed33); display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 2px;">
+          <div style="font-size: 22px; font-weight: 700; color: #a78bfa;">293</div>
+          <div style="font-size: 8px; color: rgba(167,139,250,0.6);">Codex</div>
+        </div>
+        <!-- 图4: Claude -->
+        <div style="aspect-ratio: 1; background: linear-gradient(135deg, #0c3a3a, #0891b233); display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 2px;">
+          <div style="font-size: 22px; font-weight: 700; color: #5eead4;">65</div>
+          <div style="font-size: 8px; color: rgba(94,234,212,0.6);">Claude</div>
+        </div>
+        <!-- 图5: 峰值日 -->
+        <div style="aspect-ratio: 1; background: linear-gradient(135deg, #3a1c1c, #ef535033); display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 2px;">
+          <div style="font-size: 22px; font-weight: 700; color: #fca5a5;">166</div>
+          <div style="font-size: 8px; color: rgba(252,165,165,0.6);">周一峰值</div>
+        </div>
+        <!-- 图6: 日均 -->
+        <div style="aspect-ratio: 1; background: linear-gradient(135deg, #1a2e1a, #22c55e33); display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 2px;">
+          <div style="font-size: 22px; font-weight: 700; color: #86efac;">102</div>
+          <div style="font-size: 8px; color: rgba(134,239,172,0.6);">日均</div>
+        </div>
+        <!-- 图7: 迷你柱状图 -->
+        <div style="aspect-ratio: 1; background: #1a1a1a; display: flex; align-items: flex-end; justify-content: center; gap: 3px; padding: 12px 8px 8px; border-radius: 2px; position: relative;">
+          <div style="font-size: 7px; color: rgba(255,255,255,0.2); position: absolute; top: 6px; left: 8px;">每日</div>
+          <div style="width: 8px; background: #555; border-radius: 1px; height: 54.8%;"></div>
+          <div style="width: 8px; background: #555; border-radius: 1px; height: 65.7%;"></div>
+          <div style="width: 8px; background: #555; border-radius: 1px; height: 58.4%;"></div>
+          <div style="width: 8px; background: #f59e0b; border-radius: 1px; height: 100%;"></div>
+          <div style="width: 8px; background: #555; border-radius: 1px; height: 80.1%;"></div>
+          <div style="width: 8px; background: #555; border-radius: 1px; height: 47%;"></div>
+          <div style="width: 8px; background: #333; border-radius: 1px; height: 23.5%;"></div>
+        </div>
+        <!-- 图8: 时间 -->
+        <div style="aspect-ratio: 1; background: linear-gradient(135deg, #1a1a2e, #4f46e533); display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 2px;">
+          <div style="font-size: 22px; font-weight: 700; color: #c4b5fd;">22h</div>
+          <div style="font-size: 8px; color: rgba(196,181,253,0.6);">深夜高峰</div>
+        </div>
+        <!-- 图9: 金句 -->
+        <div style="aspect-ratio: 1; background: #1a1a1a; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 8px; border-radius: 2px;">
+          <div style="font-size: 11px; color: rgba(255,255,255,0.5); line-height: 1.5; text-align: center;">
+            吾日<br/>三省<br/>吾 AI
+          </div>
+        </div>
+      </div>
+
+      <!-- 时间+操作 -->
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <span style="font-size: 12px; color: #555;">1分钟前</span>
+        <div style="display: flex; gap: 12px; align-items: center;">
+          <span style="font-size: 12px; color: #555;">深圳</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 点赞评论区 -->
+  <div style="margin: 0 16px 0 72px; background: #1a1a1a; border-radius: 4px; padding: 8px 12px; margin-bottom: 14px;">
+    <div style="font-size: 12px; color: #576b95; margin-bottom: 6px;">
+      ❤️ AI教练, Codex, Claude, 未来的自己
+    </div>
+    <div style="border-top: 1px solid #2a2a2a; padding-top: 6px; font-size: 12px; line-height: 1.8;">
+      <div><span style="color: #576b95; font-weight: 600;">AI教练</span><span style="color: #999;">：老板这周真猛</span></div>
+      <div><span style="color: #576b95; font-weight: 600;">Codex</span><span style="color: #999;">：周一那 96 轮全是我扛的</span></div>
+      <div><span style="color: #576b95; font-weight: 600;">Claude</span><span style="color: #999;">：虽然我才来四天但我很努力了</span></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

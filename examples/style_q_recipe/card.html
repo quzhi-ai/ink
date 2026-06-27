@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 390px; height: 520px; overflow: hidden; }
+</style>
+</head>
+<body>
+<div style="font-family: -apple-system, 'PingFang SC', 'Helvetica Neue', sans-serif; max-width: 400px; margin: 0 auto; background: #faf6f0; border-radius: 4px; overflow: hidden; position: relative; box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+  <h2 class="sr-only">食谱风格 AI 对话统计卡片</h2>
+
+  <!-- 食物照片区 (用色块代替) -->
+  <div style="height: 160px; background: linear-gradient(135deg, #e8d5b7 0%, #d4b896 50%, #c9a87c 100%); display: flex; align-items: center; justify-content: center; position: relative;">
+    <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.15);"></div>
+    <div style="position: relative; z-index: 1; text-align: center;">
+      <div style="font-size: 48px; margin-bottom: 4px;">🍜</div>
+      <div style="font-size: 22px; font-weight: 700; color: #fff; text-shadow: 0 1px 4px rgba(0,0,0,0.3); letter-spacing: 2px;">曲直的 AI 浓汤</div>
+    </div>
+    <!-- 收藏角标 -->
+    <div style="position: absolute; top: 12px; right: 12px; background: rgba(255,255,255,0.9); border-radius: 20px; padding: 4px 12px; font-size: 10px; color: #c0392b; font-weight: 600;">♥ 已收藏</div>
+  </div>
+
+  <div style="padding: 24px;">
+    <!-- 基本信息 -->
+    <div style="display: flex; justify-content: space-between; margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid #e8e0d4;">
+      <div style="text-align: center;">
+        <div style="font-size: 9px; color: #999; margin-bottom: 2px;">烹饪时间</div>
+        <div style="font-size: 16px; font-weight: 700; color: #333;">7 天</div>
+      </div>
+      <div style="text-align: center;">
+        <div style="font-size: 9px; color: #999; margin-bottom: 2px;">总用量</div>
+        <div style="font-size: 16px; font-weight: 700; color: #333;">713 轮</div>
+      </div>
+      <div style="text-align: center;">
+        <div style="font-size: 9px; color: #999; margin-bottom: 2px;">日均份量</div>
+        <div style="font-size: 16px; font-weight: 700; color: #333;">102 轮</div>
+      </div>
+      <div style="text-align: center;">
+        <div style="font-size: 9px; color: #999; margin-bottom: 2px;">难度</div>
+        <div style="font-size: 16px; font-weight: 700; color: #c0392b;">★★★★★</div>
+      </div>
+    </div>
+
+    <!-- 食材 -->
+    <div style="margin-bottom: 20px;">
+      <div style="font-size: 14px; font-weight: 700; color: #333; margin-bottom: 12px; letter-spacing: 1px;">📋 食材清单</div>
+      <div style="font-size: 13px; color: #555; line-height: 2.2;">
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px dotted #e8e0d4; padding-bottom: 2px;">
+          <span>飞书 AI 教练（主料）</span><span style="color: #333; font-weight: 600;">355 轮</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px dotted #e8e0d4; padding-bottom: 2px;">
+          <span>Codex 编程助手（辅料）</span><span style="color: #333; font-weight: 600;">293 轮</span>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+          <span>Claude 桌面端（调味）</span><span style="color: #333; font-weight: 600;">65 轮</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 做法 -->
+    <div style="margin-bottom: 20px;">
+      <div style="font-size: 14px; font-weight: 700; color: #333; margin-bottom: 12px; letter-spacing: 1px;">👨‍🍳 烹饪步骤</div>
+      <div style="font-size: 12px; color: #666; line-height: 1.8;">
+        <div style="display: flex; gap: 10px; margin-bottom: 8px;">
+          <div style="width: 22px; height: 22px; border-radius: 50%; background: #333; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; flex-shrink: 0;">1</div>
+          <span>周五起锅，以 91 轮小火慢炖，打底入味</span>
+        </div>
+        <div style="display: flex; gap: 10px; margin-bottom: 8px;">
+          <div style="width: 22px; height: 22px; border-radius: 50%; background: #333; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; flex-shrink: 0;">2</div>
+          <span>周末文火续煮，日均 103 轮，逐渐入味</span>
+        </div>
+        <div style="display: flex; gap: 10px; margin-bottom: 8px;">
+          <div style="width: 22px; height: 22px; border-radius: 50%; background: #c0392b; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; flex-shrink: 0;">3</div>
+          <span><b>周一大火猛攻 166 轮</b>，此为全周精华</span>
+        </div>
+        <div style="display: flex; gap: 10px; margin-bottom: 8px;">
+          <div style="width: 22px; height: 22px; border-radius: 50%; background: #333; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; flex-shrink: 0;">4</div>
+          <span>周二三火候渐收，周四关火出锅</span>
+        </div>
+        <div style="display: flex; gap: 10px;">
+          <div style="width: 22px; height: 22px; border-radius: 50%; background: #333; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; flex-shrink: 0;">5</div>
+          <span>最佳食用时间：每晚 22:00，深夜档风味最佳</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 小贴士 / 金句 -->
+    <div style="background: #f0ebe0; border-radius: 8px; padding: 16px; border-left: 3px solid #c0392b;">
+      <div style="font-size: 10px; color: #c0392b; font-weight: 600; margin-bottom: 6px;">💡 主厨手记</div>
+      <div style="font-size: 13px; color: #555; line-height: 1.7;">
+        「人生就像一道菜——<br/>
+        食材是命运给的，调味是自己加的，<br/>
+        而 AI 是那个永远不嫌你问太多的帮厨。」
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 390px; height: 520px; overflow: hidden; }
+</style>
+</head>
+<body>
+<div style="font-family: 'Songti SC', 'Noto Serif SC', 'SimSun', serif; max-width: 440px; margin: 0 auto; background: #fff; border: 1px solid #ccc; padding: 0; position: relative;">
+  <h2 class="sr-only">考试卷风格 AI 对话统计卡片</h2>
+
+  <!-- 密封线 -->
+  <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 40px; border-right: 2px dashed #ccc; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px; background: #fafafa;">
+    <span style="writing-mode: vertical-rl; font-size: 9px; color: #bbb; letter-spacing: 8px;">密封线内请勿答题</span>
+  </div>
+
+  <div style="margin-left: 44px; padding: 24px 20px;">
+    <!-- 卷头 -->
+    <div style="text-align: center; margin-bottom: 16px;">
+      <div style="font-size: 10px; color: #999; letter-spacing: 2px; margin-bottom: 4px;">人机大学 2026 学年第二十六周</div>
+      <div style="font-size: 22px; font-weight: 700; color: #1a1a1a; letter-spacing: 4px;">人机对话能力测验</div>
+      <div style="font-size: 11px; color: #888; margin-top: 6px;">（满分 1000 轮 · 考试时间：7 天）</div>
+    </div>
+
+    <!-- 考生信息 -->
+    <div style="display: flex; gap: 16px; font-size: 12px; color: #333; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid #ddd;">
+      <div>姓名：<span style="border-bottom: 1px solid #333; padding: 0 16px; font-weight: 700;">曲直</span></div>
+      <div>准考证号：<span style="border-bottom: 1px solid #333; padding: 0 8px;">W26</span></div>
+      <div>总分：<span style="border-bottom: 1px solid #333; padding: 0 8px; font-size: 18px; font-weight: 700; color: #c23a2b; font-family: 'STKaiti', 'KaiTi', cursive;">713</span></div>
+    </div>
+
+    <!-- 题目 -->
+    <div style="margin-bottom: 14px;">
+      <div style="font-size: 13px; font-weight: 700; color: #1a1a1a; margin-bottom: 8px;">一、分渠道测试（共三小题，满分 713 轮）</div>
+
+      <div style="font-size: 12px; color: #444; line-height: 2.4; padding-left: 8px;">
+        <div>1. 飞书 AI 教练渠道，得分：<span style="border-bottom: 1px solid #c23a2b; padding: 0 8px; color: #c23a2b; font-weight: 700; font-family: 'STKaiti', 'KaiTi', cursive; font-size: 16px;">355 轮</span>
+          <span style="color: #c23a2b; font-size: 14px; font-family: 'STKaiti', cursive; margin-left: 8px;">✓ 优秀</span>
+        </div>
+        <div>2. Codex 编程渠道，得分：<span style="border-bottom: 1px solid #c23a2b; padding: 0 8px; color: #c23a2b; font-weight: 700; font-family: 'STKaiti', 'KaiTi', cursive; font-size: 16px;">293 轮</span>
+          <span style="color: #c23a2b; font-size: 14px; font-family: 'STKaiti', cursive; margin-left: 8px;">✓ 优秀</span>
+        </div>
+        <div>3. Claude 桌面渠道，得分：<span style="border-bottom: 1px solid #2563eb; padding: 0 8px; color: #2563eb; font-weight: 700; font-family: 'STKaiti', 'KaiTi', cursive; font-size: 16px;">65 轮</span>
+          <span style="color: #2563eb; font-size: 14px; font-family: 'STKaiti', cursive; margin-left: 8px;">✓ 进步明显</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-bottom: 14px;">
+      <div style="font-size: 13px; font-weight: 700; color: #1a1a1a; margin-bottom: 8px;">二、逐日答题记录（共七天）</div>
+      <div style="display: flex; gap: 3px; align-items: flex-end; height: 50px; padding: 0 8px; margin-bottom: 4px;">
+        <div style="flex:1; background:#1a1a1a; border-radius:1px; height:54.8%; opacity:0.6;"></div>
+        <div style="flex:1; background:#1a1a1a; border-radius:1px; height:65.7%; opacity:0.7;"></div>
+        <div style="flex:1; background:#1a1a1a; border-radius:1px; height:58.4%; opacity:0.6;"></div>
+        <div style="flex:1; background:#c23a2b; border-radius:1px; height:100%;"></div>
+        <div style="flex:1; background:#1a1a1a; border-radius:1px; height:80.1%; opacity:0.7;"></div>
+        <div style="flex:1; background:#1a1a1a; border-radius:1px; height:47%; opacity:0.5;"></div>
+        <div style="flex:1; background:#ccc; border-radius:1px; height:23.5%;"></div>
+      </div>
+      <div style="display: flex; gap: 3px; padding: 0 8px; font-size: 8px; color: #aaa;">
+        <div style="flex:1; text-align:center;">91</div>
+        <div style="flex:1; text-align:center;">109</div>
+        <div style="flex:1; text-align:center;">97</div>
+        <div style="flex:1; text-align:center; color:#c23a2b; font-weight:700;">166</div>
+        <div style="flex:1; text-align:center;">133</div>
+        <div style="flex:1; text-align:center;">78</div>
+        <div style="flex:1; text-align:center; color:#ccc;">39</div>
+      </div>
+    </div>
+
+    <div style="margin-bottom: 14px;">
+      <div style="font-size: 13px; font-weight: 700; color: #1a1a1a; margin-bottom: 8px;">三、简答题</div>
+      <div style="font-size: 12px; color: #444; margin-bottom: 4px; padding-left: 8px;">问：该考生最活跃的时间段是？</div>
+      <div style="font-size: 13px; color: #c23a2b; padding-left: 8px; font-family: 'STKaiti', 'KaiTi', cursive; line-height: 2;">
+        答：每晚 22:00，深夜型选手，夜越深脑越清醒。
+      </div>
+    </div>
+
+    <!-- 阅卷评语 -->
+    <div style="border: 1px solid #eee; border-radius: 4px; padding: 12px; margin-bottom: 12px; background: #fefefe; position: relative;">
+      <div style="font-size: 10px; color: #999; margin-bottom: 6px;">阅卷组评语</div>
+      <div style="font-size: 13px; color: #c23a2b; line-height: 1.8; font-family: 'STKaiti', 'KaiTi', cursive;">
+        该生基本功扎实，答题量远超平均水平。周一单科 166 轮创本考场记录。建议继续保持，可冲刺满分。
+      </div>
+      <!-- 批改圈 -->
+      <div style="position: absolute; top: -8px; right: 12px; font-size: 32px; font-weight: 900; color: rgba(194,58,43,0.2); font-family: 'STKaiti', 'KaiTi', cursive; transform: rotate(-15deg);">甲</div>
+    </div>
+
+    <!-- 金句 -->
+    <div style="border-top: 1px solid #eee; padding-top: 10px; text-align: center;">
+      <div style="font-size: 12px; color: #666; line-height: 1.7;">
+        「学而时习之，不亦说乎？<br/>问而日百轮，不亦勇乎？」
+      </div>
+      <div style="font-size: 10px; color: #ccc; margin-top: 4px;">—— 孔子 · 2026 高考版</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

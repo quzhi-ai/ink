@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 390px; height: 520px; overflow: hidden; }
+</style>
+</head>
+<body>
+<div style="font-family: 'SF Mono', 'JetBrains Mono', 'Menlo', monospace; max-width: 480px; margin: 0 auto; background: #0a0e14; border-radius: 8px; overflow: hidden; border: 1px solid #1a2332;">
+  <h2 class="sr-only">NASA任务控制台风格 AI 对话统计卡片</h2>
+
+  <!-- 顶栏 -->
+  <div style="background: #0d1520; padding: 8px 16px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1a2332;">
+    <div style="display: flex; align-items: center; gap: 8px;">
+      <div style="width: 8px; height: 8px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 4px #22c55e;"></div>
+      <span style="font-size: 10px; color: #22c55e; letter-spacing: 2px;">系统就绪</span>
+    </div>
+    <span style="font-size: 10px; color: #334155; letter-spacing: 1px;">HAI-MC · 人机任务控制</span>
+    <span style="font-size: 10px; color: #334155;">MET 07:00:00:00</span>
+  </div>
+
+  <div style="padding: 16px;">
+    <!-- 任务名 -->
+    <div style="margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid #1a2332;">
+      <div style="font-size: 9px; color: #475569; letter-spacing: 2px; margin-bottom: 4px;">任务代号</div>
+      <div style="font-size: 22px; font-weight: 700; color: #e2e8f0; letter-spacing: 2px;">对话者 — 26</div>
+      <div style="font-size: 10px; color: #475569; margin-top: 2px;">DIALOGIST-26 · 指令长：曲直 · 2026.06.20 – 06.26</div>
+    </div>
+
+    <!-- 遥测数据 -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 8px; margin-bottom: 16px;">
+      <div style="background: #0d1520; border: 1px solid #1a2332; border-radius: 4px; padding: 10px 8px; text-align: center;">
+        <div style="font-size: 8px; color: #475569; letter-spacing: 1px;">总通讯</div>
+        <div style="font-size: 22px; font-weight: 700; color: #22c55e; margin-top: 2px;">713</div>
+        <div style="font-size: 8px; color: #22c55e;">● 正常</div>
+      </div>
+      <div style="background: #0d1520; border: 1px solid #1a2332; border-radius: 4px; padding: 10px 8px; text-align: center;">
+        <div style="font-size: 8px; color: #475569; letter-spacing: 1px;">日均速率</div>
+        <div style="font-size: 22px; font-weight: 700; color: #3b82f6; margin-top: 2px;">102</div>
+        <div style="font-size: 8px; color: #3b82f6;">轮/日</div>
+      </div>
+      <div style="background: #0d1520; border: 1px solid #1a2332; border-radius: 4px; padding: 10px 8px; text-align: center;">
+        <div style="font-size: 8px; color: #475569; letter-spacing: 1px;">峰值载荷</div>
+        <div style="font-size: 22px; font-weight: 700; color: #f59e0b; margin-top: 2px;">166</div>
+        <div style="font-size: 8px; color: #f59e0b;">⚠ 过载</div>
+      </div>
+      <div style="background: #0d1520; border: 1px solid #1a2332; border-radius: 4px; padding: 10px 8px; text-align: center;">
+        <div style="font-size: 8px; color: #475569; letter-spacing: 1px;">活跃窗口</div>
+        <div style="font-size: 22px; font-weight: 700; color: #e2e8f0; margin-top: 2px;">22h</div>
+        <div style="font-size: 8px; color: #475569;">深空时段</div>
+      </div>
+    </div>
+
+    <!-- 通讯频道 -->
+    <div style="margin-bottom: 16px;">
+      <div style="font-size: 9px; color: #475569; letter-spacing: 2px; margin-bottom: 8px;">通讯频道状态</div>
+      <div style="display: flex; flex-direction: column; gap: 6px;">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <div style="width: 6px; height: 6px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 3px #22c55e;"></div>
+          <span style="font-size: 11px; color: #94a3b8; width: 80px;">频道 ALPHA</span>
+          <div style="flex: 1; height: 4px; background: #1a2332; border-radius: 2px; overflow: hidden;">
+            <div style="width: 49.8%; height: 100%; background: #22c55e; border-radius: 2px;"></div>
+          </div>
+          <span style="font-size: 11px; color: #22c55e; width: 70px; text-align: right;">飞书 355</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <div style="width: 6px; height: 6px; border-radius: 50%; background: #3b82f6; box-shadow: 0 0 3px #3b82f6;"></div>
+          <span style="font-size: 11px; color: #94a3b8; width: 80px;">频道 BRAVO</span>
+          <div style="flex: 1; height: 4px; background: #1a2332; border-radius: 2px; overflow: hidden;">
+            <div style="width: 41.1%; height: 100%; background: #3b82f6; border-radius: 2px;"></div>
+          </div>
+          <span style="font-size: 11px; color: #3b82f6; width: 70px; text-align: right;">Codex 293</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <div style="width: 6px; height: 6px; border-radius: 50%; background: #a78bfa; box-shadow: 0 0 3px #a78bfa;"></div>
+          <span style="font-size: 11px; color: #94a3b8; width: 80px;">频道 CHARLIE</span>
+          <div style="flex: 1; height: 4px; background: #1a2332; border-radius: 2px; overflow: hidden;">
+            <div style="width: 9.1%; height: 100%; background: #a78bfa; border-radius: 2px;"></div>
+          </div>
+          <span style="font-size: 11px; color: #a78bfa; width: 70px; text-align: right;">Claude 65</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 任务时间线 -->
+    <div style="margin-bottom: 16px;">
+      <div style="font-size: 9px; color: #475569; letter-spacing: 2px; margin-bottom: 8px;">任务时间线</div>
+      <div style="display: flex; gap: 4px; align-items: flex-end; height: 50px;">
+        <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; height:100%;">
+          <div style="width:100%; background: linear-gradient(180deg, #22c55e, #15803d); border-radius:2px 2px 0 0; height:54.8%;"></div>
+          <div style="font-size:7px; color:#475569; margin-top:3px;">T+1</div>
+        </div>
+        <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; height:100%;">
+          <div style="width:100%; background: linear-gradient(180deg, #22c55e, #15803d); border-radius:2px 2px 0 0; height:65.7%;"></div>
+          <div style="font-size:7px; color:#475569; margin-top:3px;">T+2</div>
+        </div>
+        <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; height:100%;">
+          <div style="width:100%; background: linear-gradient(180deg, #22c55e, #15803d); border-radius:2px 2px 0 0; height:58.4%;"></div>
+          <div style="font-size:7px; color:#475569; margin-top:3px;">T+3</div>
+        </div>
+        <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; height:100%;">
+          <div style="width:100%; background: linear-gradient(180deg, #f59e0b, #b45309); border-radius:2px 2px 0 0; height:100%; box-shadow: 0 0 6px rgba(245,158,11,0.3);"></div>
+          <div style="font-size:7px; color:#f59e0b; margin-top:3px; font-weight:700;">T+4⚠</div>
+        </div>
+        <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; height:100%;">
+          <div style="width:100%; background: linear-gradient(180deg, #22c55e, #15803d); border-radius:2px 2px 0 0; height:80.1%;"></div>
+          <div style="font-size:7px; color:#475569; margin-top:3px;">T+5</div>
+        </div>
+        <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; height:100%;">
+          <div style="width:100%; background: linear-gradient(180deg, #22c55e, #15803d); border-radius:2px 2px 0 0; height:47%; opacity:0.7;"></div>
+          <div style="font-size:7px; color:#475569; margin-top:3px;">T+6</div>
+        </div>
+        <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; height:100%;">
+          <div style="width:100%; background: linear-gradient(180deg, #475569, #334155); border-radius:2px 2px 0 0; height:23.5%;"></div>
+          <div style="font-size:7px; color:#334155; margin-top:3px;">T+7</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 金句 -->
+    <div style="border-top: 1px solid #1a2332; padding-top: 12px; text-align: center;">
+      <div style="font-size: 11px; color: #64748b; line-height: 1.6;">
+        「这是一个人的一小步，<br/>却是人机对话的一大步。」
+      </div>
+      <div style="font-size: 9px; color: #334155; margin-top: 4px;">—— 阿姆斯特朗 · 任务控制改编</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 390px; height: 520px; overflow: hidden; }
+</style>
+</head>
+<body>
+<div style="font-family: -apple-system, 'SF Pro Display', 'PingFang SC', sans-serif; max-width: 460px; margin: 0 auto; display: flex; border-radius: 14px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.15); position: relative;">
+  <h2 class="sr-only">演唱会门票风格 AI 对话统计卡片</h2>
+
+  <!-- 主票 -->
+  <div style="flex: 1; background: linear-gradient(160deg, #1a0533 0%, #2d1b69 40%, #1a0533 100%); padding: 28px 24px; position: relative; overflow: hidden;">
+    <!-- 光效 -->
+    <div style="position: absolute; top: -30px; right: -20px; width: 160px; height: 160px; border-radius: 50%; background: radial-gradient(circle, rgba(168,85,247,0.15) 0%, transparent 70%); pointer-events: none;"></div>
+    <div style="position: absolute; bottom: 20px; left: -30px; width: 120px; height: 120px; border-radius: 50%; background: radial-gradient(circle, rgba(236,72,153,0.1) 0%, transparent 70%); pointer-events: none;"></div>
+
+    <div style="position: relative; z-index: 1;">
+      <!-- 演出名 -->
+      <div style="font-size: 9px; color: rgba(255,255,255,0.3); letter-spacing: 3px; margin-bottom: 8px;">LIVE TOUR 2026</div>
+      <div style="font-size: 28px; font-weight: 800; color: #fff; line-height: 1.2; margin-bottom: 4px; letter-spacing: 2px;">
+        人 机 交 响
+      </div>
+      <div style="font-size: 13px; color: rgba(168,85,247,0.8); margin-bottom: 20px;">第二十六周巡演 · 深圳站</div>
+
+      <!-- 演出者 -->
+      <div style="margin-bottom: 20px;">
+        <div style="font-size: 9px; color: rgba(255,255,255,0.25); margin-bottom: 4px;">主唱</div>
+        <div style="font-size: 20px; font-weight: 700; color: #fff; letter-spacing: 2px;">曲直</div>
+      </div>
+
+      <!-- 嘉宾 -->
+      <div style="display: flex; gap: 12px; margin-bottom: 20px;">
+        <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 10px 12px; flex: 1; text-align: center;">
+          <div style="font-size: 16px; font-weight: 700; color: #a855f7;">355</div>
+          <div style="font-size: 9px; color: rgba(255,255,255,0.3); margin-top: 2px;">飞书乐队</div>
+        </div>
+        <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 10px 12px; flex: 1; text-align: center;">
+          <div style="font-size: 16px; font-weight: 700; color: #ec4899;">293</div>
+          <div style="font-size: 9px; color: rgba(255,255,255,0.3); margin-top: 2px;">Codex 乐队</div>
+        </div>
+        <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 10px 12px; flex: 0.6; text-align: center;">
+          <div style="font-size: 16px; font-weight: 700; color: #38bdf8;">65</div>
+          <div style="font-size: 9px; color: rgba(255,255,255,0.3); margin-top: 2px;">Claude</div>
+        </div>
+      </div>
+
+      <!-- 曲目 -->
+      <div style="font-size: 9px; color: rgba(255,255,255,0.2); letter-spacing: 1px; margin-bottom: 6px;">SET LIST</div>
+      <div style="display: flex; gap: 3px; align-items: flex-end; height: 44px; margin-bottom: 4px;">
+        <div style="flex:1; background:rgba(168,85,247,0.4); border-radius:2px 2px 0 0; height:54.8%;"></div>
+        <div style="flex:1; background:rgba(168,85,247,0.5); border-radius:2px 2px 0 0; height:65.7%;"></div>
+        <div style="flex:1; background:rgba(168,85,247,0.45); border-radius:2px 2px 0 0; height:58.4%;"></div>
+        <div style="flex:1; background:rgba(236,72,153,0.7); border-radius:2px 2px 0 0; height:100%; box-shadow: 0 0 8px rgba(236,72,153,0.3);"></div>
+        <div style="flex:1; background:rgba(168,85,247,0.55); border-radius:2px 2px 0 0; height:80.1%;"></div>
+        <div style="flex:1; background:rgba(168,85,247,0.35); border-radius:2px 2px 0 0; height:47%;"></div>
+        <div style="flex:1; background:rgba(168,85,247,0.15); border-radius:2px 2px 0 0; height:23.5%;"></div>
+      </div>
+      <div style="display: flex; gap: 3px;">
+        <div style="flex:1; text-align:center; font-size:7px; color:rgba(255,255,255,0.2);">五</div>
+        <div style="flex:1; text-align:center; font-size:7px; color:rgba(255,255,255,0.2);">六</div>
+        <div style="flex:1; text-align:center; font-size:7px; color:rgba(255,255,255,0.2);">日</div>
+        <div style="flex:1; text-align:center; font-size:7px; color:#ec4899;">一</div>
+        <div style="flex:1; text-align:center; font-size:7px; color:rgba(255,255,255,0.2);">二</div>
+        <div style="flex:1; text-align:center; font-size:7px; color:rgba(255,255,255,0.2);">三</div>
+        <div style="flex:1; text-align:center; font-size:7px; color:rgba(255,255,255,0.15);">四</div>
+      </div>
+
+      <!-- 金句 -->
+      <div style="margin-top: 16px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06);">
+        <div style="font-size: 12px; color: rgba(255,255,255,0.4); line-height: 1.6; text-align: center; font-style: italic;">
+          「没有音乐，生命将是一个错误。<br/>没有对话，思考也是。」
+        </div>
+        <div style="font-size: 9px; color: rgba(255,255,255,0.12); margin-top: 6px; text-align: center;">—— 尼采 · 曲直改编</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 锯齿 -->
+  <div style="width: 20px; position: relative; flex-shrink: 0; background: linear-gradient(160deg, #1a0533, #2d1b69);">
+    <div style="position: absolute; top: 0; bottom: 0; left: 50%; width: 1px; border-left: 2px dashed rgba(255,255,255,0.1);"></div>
+    <div style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); width: 20px; height: 20px; border-radius: 50%; background: #f0f0f0;"></div>
+    <div style="position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 20px; height: 20px; border-radius: 50%; background: #f0f0f0;"></div>
+  </div>
+
+  <!-- 副券 -->
+  <div style="width: 100px; background: linear-gradient(160deg, #1a0533, #2d1b69); padding: 28px 12px; display: flex; flex-direction: column; justify-content: space-between; align-items: center; flex-shrink: 0;">
+    <div style="text-align: center;">
+      <div style="font-size: 8px; color: rgba(255,255,255,0.2); letter-spacing: 1px;">总曲目</div>
+      <div style="font-size: 28px; font-weight: 800; color: #fff; line-height: 1;">713</div>
+      <div style="font-size: 8px; color: rgba(255,255,255,0.2); margin-top: 2px;">首</div>
+    </div>
+
+    <div style="transform: rotate(90deg); white-space: nowrap; font-size: 8px; color: rgba(255,255,255,0.15); letter-spacing: 2px;">曲直 QUZHI</div>
+
+    <div style="text-align: center;">
+      <div style="font-size: 8px; color: rgba(255,255,255,0.2);">开演</div>
+      <div style="font-size: 16px; font-weight: 700; color: #a855f7;">22:00</div>
+      <div style="font-size: 8px; color: rgba(255,255,255,0.15); margin-top: 4px;">6.20 – 6.26</div>
+    </div>
+
+    <div style="font-size: 16px; color: rgba(255,255,255,0.08); letter-spacing: -1px; transform: rotate(90deg); white-space: nowrap;">|||| ||| |||| |||</div>
+  </div>
+</div>
+</body>
+</html>

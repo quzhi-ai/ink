@@ -24,10 +24,9 @@ npx skills add quzhi-ai/ink
 
 [How it works](#how-it-works) · [Style modes](#the-6-style-modes) · [Supported tools](#supported-ai-tools) · [Install](#install)
 
-<!-- TODO: add hero image once generated -->
-<!-- <p align="center">
+<p align="center">
   <img src="assets/hero-collage.png" width="900" alt="Ink card examples across 6 style modes" />
-</p> -->
+</p>
 
 ---
 
@@ -76,6 +75,64 @@ Every card is **generated from scratch** — no fixed templates. The AI creates 
 | **Surprise Me** | No rules. Maximum chaos. | You'll find out when it renders. |
 
 Each card includes a **philosophical quote**, remixed from a real author to fit your data. Never the same twice.
+
+### Gallery
+
+<table>
+<tr>
+<td align="center"><img src="examples/style_k_prescription/card.png" width="180"><br><sub>Prescription 处方笺</sub></td>
+<td align="center"><img src="examples/style_z5_exam_paper/card.png" width="180"><br><sub>Exam Paper 考试卷</sub></td>
+<td align="center"><img src="examples/style_a1_imperial_edict/card.png" width="180"><br><sub>Imperial Edict 圣旨</sub></td>
+<td align="center"><img src="examples/style_r_report_card/card.png" width="180"><br><sub>Report Card 成绩单</sub></td>
+</tr>
+<tr>
+<td align="center"><img src="examples/style_a8_bank_statement/card.png" width="180"><br><sub>Bank Statement 对账单</sub></td>
+<td align="center"><img src="examples/style_a9_imperial_exam/card.png" width="180"><br><sub>Imperial Exam 科举金榜</sub></td>
+<td align="center"><img src="examples/style_l_vinyl_record/card.png" width="180"><br><sub>Vinyl Record 黑胶唱片</sub></td>
+<td align="center"><img src="examples/style_z1_tarot/card.png" width="180"><br><sub>Tarot Card 塔罗牌</sub></td>
+</tr>
+<tr>
+<td align="center"><img src="examples/style_z3_film_poster/card.png" width="180"><br><sub>Film Poster 电影海报</sub></td>
+<td align="center"><img src="examples/style_u_wine_label/card.png" width="180"><br><sub>Wine Label 酒标</sub></td>
+<td align="center"><img src="examples/style_s_constellation/card.png" width="180"><br><sub>Star Map 星图</sub></td>
+<td align="center"><img src="examples/style_x_concert_ticket/card.png" width="180"><br><sub>Concert Ticket 演唱会门票</sub></td>
+</tr>
+<tr>
+<td align="center"><img src="examples/style_a2_spotify_player/card.png" width="180"><br><sub>Music Player 音乐播放器</sub></td>
+<td align="center"><img src="examples/style_e_terminal/card.png" width="180"><br><sub>Terminal CLI 终端命令行</sub></td>
+<td align="center"><img src="examples/style_w_stock_chart/card.png" width="180"><br><sub>K-Line Chart K线图</sub></td>
+<td align="center"><img src="examples/style_a3_nasa_mission/card.png" width="180"><br><sub>NASA Mission 太空任务</sub></td>
+</tr>
+<tr>
+<td align="center"><img src="examples/style_z8_fitness_app/card.png" width="180"><br><sub>Fitness Rings 健身圆环</sub></td>
+<td align="center"><img src="examples/style_a6_basketball_stats/card.png" width="180"><br><sub>NBA Stats NBA球员卡</sub></td>
+<td align="center"><img src="examples/style_a7_pokedex/card.png" width="180"><br><sub>Pokédex 精灵图鉴</sub></td>
+<td align="center"><img src="examples/style_g_receipt/card.png" width="180"><br><sub>Receipt 小票</sub></td>
+</tr>
+<tr>
+<td align="center"><img src="examples/style_q_recipe/card.png" width="180"><br><sub>Recipe 食谱</sub></td>
+<td align="center"><img src="examples/style_a5_meituan_order/card.png" width="180"><br><sub>Delivery Order 外卖订单</sub></td>
+<td align="center"><img src="examples/style_z7_ikea_manual/card.png" width="180"><br><sub>IKEA Manual 宜家说明书</sub></td>
+<td align="center"><img src="examples/style_a10_coffee_sleeve/card.png" width="180"><br><sub>Coffee Sleeve 咖啡杯套</sub></td>
+</tr>
+<tr>
+<td align="center"><img src="examples/style_z9_fortune_cookie/card.png" width="180"><br><sub>Fortune Cookie 签语饼</sub></td>
+<td align="center"><img src="examples/style_z6_wechat_moments/card.png" width="180"><br><sub>WeChat Moments 朋友圈</sub></td>
+<td align="center"><img src="examples/style_z4_shipping_label/card.png" width="180"><br><sub>Shipping Label 快递面单</sub></td>
+<td align="center"><img src="examples/style_o_newspaper/card.png" width="180"><br><sub>Newspaper 民国老报纸</sub></td>
+</tr>
+<tr>
+<td align="center"><img src="examples/style_v_telegram/card.png" width="180"><br><sub>Telegram 电报</sub></td>
+<td align="center"><img src="examples/style_j_boarding_pass/card.png" width="180"><br><sub>Boarding Pass 登机牌</sub></td>
+<td align="center"><img src="examples/style_p_passport/card.png" width="180"><br><sub>Passport 护照签证页</sub></td>
+<td align="center"><img src="examples/style_i_postcard/card.png" width="180"><br><sub>Postcard 明信片</sub></td>
+</tr>
+<tr>
+<td align="center"><img src="examples/style_z2_metro_map/card.png" width="180"><br><sub>Metro Map 地铁线路图</sub></td>
+<td align="center"><img src="examples/style_a4_manga_panel/card.png" width="180"><br><sub>Manga Panel 漫画分镜</sub></td>
+<td colspan="2"></td>
+</tr>
+</table>
 
 ---
 
