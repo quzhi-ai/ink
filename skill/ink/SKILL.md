@@ -110,12 +110,20 @@ After the first run, skip the narrative. Go straight to:
 
 Scan known data directories for each AI tool. Only read **metadata** (timestamps, source, turn count). Never read conversation content.
 
+**Critical: only count user-sent messages, never AI responses.** Each tool stores both sides of the conversation. You must filter precisely:
+
+| Tool | Count rule |
+|------|-----------|
+| Claude Code | JSONL entries where `type == "user"` AND content is NOT entirely `tool_result` blocks. Entries with `type == "assistant"` are AI responses — skip them. Entries where content is a list of all `tool_result` types are automatic tool responses — skip them too. |
+| Codex | JSONL entries where `type == "event_msg"` AND `payload.type == "user_message"`. Also skip automation sessions: if `session_meta.originator == "Codex Desktop"` and the session has only 1 user_message, it is a cron-triggered automation, not manual input — exclude it. |
+| Other tools | Apply the same principle: only count the user's input turns, not the AI's replies or system/tool messages. |
+
 ### Known Paths (macOS)
 
 | Tool | Path | What to Read |
 |------|------|-------------|
-| Claude Code | `~/.claude/projects/` | JSONL conversation logs — count entries with timestamps |
-| Codex | `~/.codex/` | Session logs |
+| Claude Code | `~/.claude/projects/` | JSONL conversation logs — count `type == "user"` entries only (see count rules above) |
+| Codex | `~/.codex/` | Session logs — count `user_message` events only (see count rules above) |
 | Cursor | `~/Library/Application Support/Cursor/User/workspaceStorage/` | Chat history DB/JSON |
 | Claude Desktop | `~/Library/Application Support/Claude/` | Conversation records |
 | ChatGPT Desktop | `~/Library/Application Support/com.openai.chat/` | Local conversation cache |
@@ -129,8 +137,8 @@ Scan known data directories for each AI tool. Only read **metadata** (timestamps
 
 | Tool | Path | What to Read |
 |------|------|-------------|
-| Claude Code | `%USERPROFILE%\.claude\projects\` | JSONL conversation logs |
-| Codex | `%USERPROFILE%\.codex\` | Session logs |
+| Claude Code | `%USERPROFILE%\.claude\projects\` | JSONL conversation logs — count `type == "user"` entries only |
+| Codex | `%USERPROFILE%\.codex\` | Session logs — count `user_message` events only |
 | Cursor | `%APPDATA%\Cursor\User\workspaceStorage\` | Chat history |
 | Claude Desktop | `%APPDATA%\Claude\` | Conversation records |
 | ChatGPT Desktop | `%LOCALAPPDATA%\Packages\*OpenAI*\` | Local conversation cache |
@@ -148,7 +156,7 @@ Expected JSON structure:
   "window": {"start": "2026-06-20", "end": "2026-06-26"},
   "summary": {
     "daily": {"2026-06-20": 91, "2026-06-21": 109, ...},
-    "source_counts": {"claude-code": 293, "feishu": 355, "cursor": 65},
+    "source_counts": {"claude-code": 293, "codex": 355, "cursor": 65},
     "total": 713
   }
 }

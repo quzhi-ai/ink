@@ -39,9 +39,17 @@
 
 1. Detect OS (`process.platform` or `uname`)
 2. For each tool in the table above, check if the path exists
-3. If exists → read files, extract timestamps and count entries
+3. If exists → read files, extract timestamps and **count only user-sent messages** (never AI responses, tool results, or system messages)
 4. Group by: date, hour, source
 5. Skip any tool that is not installed (silent, no error)
+
+### Counting Rules (Critical)
+
+Each tool stores both user input and AI output. **Only count user input turns:**
+
+- **Claude Code** (`~/.claude/projects/`): JSONL entries where `type == "user"`. Exclude entries where `message.content` is a list consisting entirely of `tool_result` blocks (these are automatic tool responses, not manual user input).
+- **Codex** (`~/.codex/`): JSONL entries where `type == "event_msg"` and `payload.type == "user_message"`. Exclude automation sessions (sessions where `session_meta.originator == "Codex Desktop"` and only 1 `user_message` exists — these are cron-triggered, not manual).
+- **Other tools**: Apply the same principle — filter for user-authored input only. Do not count AI replies, system messages, or automatically generated entries.
 
 ## Privacy Rule
 
