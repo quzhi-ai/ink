@@ -1,0 +1,24 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Temp rendering files
+**/_raw*.png
+**/_render_*.html
+**/_screenshot_*.html
+
+# Local dev
+.env
+.env.local
